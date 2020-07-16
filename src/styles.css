@@ -1,0 +1,26 @@
+:root {
+  --pip-window-height: 600px;
+  /* --recorder-color-2: #a880bf; */
+}
+
+body {
+  font-family: sans-serif;
+  margin: 14px;
+  padding: 5px;
+}
+
+.controls input,
+button {
+  margin: 6px;
+}
+
+.imageContainer {
+  display: inline;
+}
+canvas,
+img {
+  /* 1280 x 853 */
+
+  height: var(--pip-window-height);
+  width: calc((1280 / 853) * var(--pip-window-height));
+}

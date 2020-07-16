@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="controls">
+      <div>
+        <input id="canvasSelector" type="checkbox" checked />
+        <label for="canvasSelector">Show canvas composites</label>
+      </div>
+
+      <div>
+        <input id="showBackground" type="checkbox" checked />
+        <label for="showBackground"
+          >Show realistic simulated desktop background image</label
+        >
+      </div>
+      <div>
+        <input id="colorInput" type="color" value="#f6b73c" />
+
+        <label for="colorInput">Choose color for round rect #1</label>
+      </div>
+    </div>
+
+    <div>
+      -----------------
+    </div>
+    <div class="imageContainer">
+      <h1>
+        This is an actual canvas:
+      </h1>
+      <canvas id="myCanvas"></canvas>
+      <h1>This is just an img captured from that Canvas</h1>
+      <img crossorigin="anonymous" />
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
